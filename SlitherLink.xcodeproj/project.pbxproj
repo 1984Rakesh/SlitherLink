@@ -15,6 +15,7 @@
 		2BAE068A1D817FE900D4365A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BAE06881D817FE900D4365A /* LaunchScreen.storyboard */; };
 		2BAE06951D817FE900D4365A /* SlitherLinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAE06941D817FE900D4365A /* SlitherLinkTests.m */; };
 		2BAE06A01D817FE900D4365A /* SlitherLinkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAE069F1D817FE900D4365A /* SlitherLinkUITests.m */; };
+		2BDD80F01D819FBA00D8D292 /* SLGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD80EF1D819FBA00D8D292 /* SLGrid.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		2BAE069B1D817FE900D4365A /* SlitherLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlitherLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAE069F1D817FE900D4365A /* SlitherLinkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlitherLinkUITests.m; sourceTree = "<group>"; };
 		2BAE06A11D817FE900D4365A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BDD80EE1D819FBA00D8D292 /* SLGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLGrid.h; sourceTree = "<group>"; };
+		2BDD80EF1D819FBA00D8D292 /* SLGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLGrid.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		2BAE06791D817FE900D4365A /* SlitherLink */ = {
 			isa = PBXGroup;
 			children = (
+				2BDD80ED1D819F9A00D8D292 /* Model */,
 				2BAE067D1D817FE900D4365A /* AppDelegate.h */,
 				2BAE067E1D817FE900D4365A /* AppDelegate.m */,
 				2BAE06801D817FE900D4365A /* ViewController.h */,
@@ -138,6 +142,15 @@
 				2BAE06A11D817FE900D4365A /* Info.plist */,
 			);
 			path = SlitherLinkUITests;
+			sourceTree = "<group>";
+		};
+		2BDD80ED1D819F9A00D8D292 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BDD80EE1D819FBA00D8D292 /* SLGrid.h */,
+				2BDD80EF1D819FBA00D8D292 /* SLGrid.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +215,7 @@
 		2BAE066F1D817FE900D4365A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SL;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Rakesh Patole";
 				TargetAttributes = {
@@ -270,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDD80F01D819FBA00D8D292 /* SLGrid.m in Sources */,
 				2BAE06821D817FE900D4365A /* ViewController.m in Sources */,
 				2BAE067F1D817FE900D4365A /* AppDelegate.m in Sources */,
 				2BAE067C1D817FE900D4365A /* main.m in Sources */,
@@ -498,6 +513,7 @@
 				2BAE06A61D817FE900D4365A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BAE06A71D817FE900D4365A /* Build configuration list for PBXNativeTarget "SlitherLinkTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +522,7 @@
 				2BAE06A91D817FE900D4365A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BAE06AA1D817FE900D4365A /* Build configuration list for PBXNativeTarget "SlitherLinkUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +531,7 @@
 				2BAE06AC1D817FE900D4365A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
