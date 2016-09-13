@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SLGameView.h"
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet SLGameView *view;
 
 @end
 

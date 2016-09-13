@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B07AD6B1D869102007825E4 /* SLGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B07AD6A1D869102007825E4 /* SLGameView.m */; };
 		2BAE067C1D817FE900D4365A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAE067B1D817FE900D4365A /* main.m */; };
 		2BAE067F1D817FE900D4365A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAE067E1D817FE900D4365A /* AppDelegate.m */; };
 		2BAE06821D817FE900D4365A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAE06811D817FE900D4365A /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B07AD691D869102007825E4 /* SLGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLGameView.h; path = SlitherLink/SLGameView.h; sourceTree = SOURCE_ROOT; };
+		2B07AD6A1D869102007825E4 /* SLGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLGameView.m; path = SlitherLink/SLGameView.m; sourceTree = SOURCE_ROOT; };
 		2BAE06771D817FE900D4365A /* SlitherLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlitherLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAE067B1D817FE900D4365A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2BAE067D1D817FE900D4365A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 			children = (
 				2BDD80EE1D819FBA00D8D292 /* SLGrid.h */,
 				2BDD80EF1D819FBA00D8D292 /* SLGrid.m */,
+				2B07AD691D869102007825E4 /* SLGameView.h */,
+				2B07AD6A1D869102007825E4 /* SLGameView.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B07AD6B1D869102007825E4 /* SLGameView.m in Sources */,
 				2BDD80F01D819FBA00D8D292 /* SLGrid.m in Sources */,
 				2BAE06821D817FE900D4365A /* ViewController.m in Sources */,
 				2BAE067F1D817FE900D4365A /* AppDelegate.m in Sources */,

@@ -14,9 +14,12 @@
 
 @implementation ViewController
 
+@dynamic view;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    SLGrid *grid = [SLGrid gridWithSize:CGSizeMake( 10, 10)];
+    [[self view] setGrid:grid];
 }
 
 - (void)didReceiveMemoryWarning {
