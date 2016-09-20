@@ -18,13 +18,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    SLGrid *grid = [SLGrid gridWithSize:CGSizeMake( 10, 10)];
+    SLGrid *grid = [SLGrid gridWithSize:CGSizeMake( 7, 7)];
     [[self view] setGrid:grid];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)generateGrid:(id)sender {
+    SLGrid *grid = [SLGrid gridWithSize:CGSizeMake( 7, 7)];
+    [[self view] setGrid:grid];
+    [[self view] setNeedsDisplay];
 }
 
 @end
