@@ -165,18 +165,19 @@ void generate_loop(SLGrid *grid) {
             [uniquFaces enumerateObjectsUsingBlock:^(SLGridFace *fc, NSUInteger idx, BOOL * _Nonnull stop) {
                 if( [fc isEqual:[NSNull null]] == false && [fc isEqual:face] == false && [fc faceColor] == FACE_COLOR_GREY ){
                     struct face_score *_fs = face_scores + [faces indexOfObject:fc];
-                    del234(lightColoredFaces, _fs);
-                    if ( canColorFace(fc, FACE_COLOR_WHITE)){
-                        int score = faceScoreForColor( fc, FACE_COLOR_WHITE);
-                        _fs->white_score = score;
-                        add234(lightColoredFaces, _fs);
-                    }
                     
                     del234(darkColoredFaces, _fs);
                     if( canColorFace(fc, FACE_COLOR_BLACK)){
                         int score = faceScoreForColor( fc, FACE_COLOR_BLACK);
                         _fs->black_score = score;
                         add234(darkColoredFaces, _fs);
+                    }
+                    
+                    del234(lightColoredFaces, _fs);
+                    if ( canColorFace(fc, FACE_COLOR_WHITE)){
+                        int score = faceScoreForColor( fc, FACE_COLOR_WHITE);
+                        _fs->white_score = score;
+                        add234(lightColoredFaces, _fs);
                     }
                 }
             }];
